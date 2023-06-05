@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+
+    <link rel="stylesheet" href="styles2.css" />
+
+    <style>
+      .hero {
+        width: 100%;
+        height: 675px;
+
+        /* background */
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        color: white;
+
+        /* display */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-title {
+        margin-top: 0;
+      }
+
+      .hero-body {
+        text-align: center;
+      }
+
+      .box-parent {
+        width: 300px;
+        height: 300px;
+
+        position: relative;
+        top: 100px;
+        left: 100px;
+
+        border: 1px solid red;
+      }
+
+      .box-child {
+        width: 100px;
+        height: 100px;
+
+        position: absolute;
+        top: -30px;
+        left: 100px;
+
+        border: 1px solid blue;
+        background-color: rgba(0, 0, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav id="nav">
+      <div class="container">
+        <a href="index4css.html" class="nav-link">Non's Blog</a>
+        <a href="page1.html" class="nav-link">Page 1</a>
+        <a href="page2.html" class="nav-link">Page 2</a>
+        <a href="https://qu1etboy.dev" target="_blank" class="nav-link"
+          >My website</a
+        >
+      </div>
+    </nav>
+    <header>
+      <div class="hero">
+        <div class="container hero-body">
+          <h1 class="hero-title">Welcome to my blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            perspiciatis rem explicabo veritatis blanditiis consequatur alias
+            veniam quae ut. Explicabo deleniti distinctio necessitatibus sit
+            odio quasi ab velit similique eaque amet iusto voluptas, ipsam nulla
+            nostrum molestias error quisquam a animi numquam fugit hic laborum
+            inventore delectus? Consequatur, dolorem ullam.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="box-parent">
+      <div class="box-child"></div>
+    </div>
+  </body>
+</html>
